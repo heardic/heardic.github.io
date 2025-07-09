@@ -11,6 +11,7 @@
 
 ## 技术原理
 ```mermaid
+sequenceDiagram
     用户->>跳转器：访问包含c参数的URL
     跳转器->>跳转器：解析URLSearchParams
     跳转器->>跳转器：Base64解码c参数值
