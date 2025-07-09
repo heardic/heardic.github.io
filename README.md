@@ -10,15 +10,4 @@
 - **跨域滚动优化**：解决iframe内滚动问题
 
 ## 技术原理
-```mermaid
-sequenceDiagram
-    用户->>跳转器：访问包含c参数的URL
-    跳转器->>跳转器：解析URLSearchParams
-    跳转器->>跳转器：Base64解码c参数值
-    alt 有效http链接
-        跳转器->>跳转器：显示加载动画(1.5秒)
-        跳转器->>目标网站：创建iframe加载内容
-        跳转器->>目标网站：绑定鼠标滚轮事件
-    else 无效链接
-        跳转器->>控制台：输出"nourls"错误
-    end
+![6cb8998a0f7cc](https://github.com/user-attachments/assets/ad89259f-759f-417b-bd2c-b12568195907)
